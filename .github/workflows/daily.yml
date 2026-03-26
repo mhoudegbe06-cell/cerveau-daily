@@ -3,7 +3,7 @@ name: Cerveau Daily
 on:
   schedule:
     - cron: '0 9 * * *'  # 9h UTC = 10h Bénin (WAT)
-  workflow_dispatch:  # permet de lancer manuellement pour tester
+  workflow_dispatch:
 
 jobs:
   send-lesson:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
