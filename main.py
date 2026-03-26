@@ -48,7 +48,7 @@ Exemple 3 : [Exemple lié à la vie en Afrique/Bénin si possible]
 🧠 CE QU'IL FAUT RETENIR
 [1 phrase clé à mémoriser]"""
 
-gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}"
+gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
 
 gemini_response = requests.post(gemini_url, json={
     "contents": [{"parts": [{"text": prompt}]}]
